@@ -1,6 +1,6 @@
 # Scalegorithm #
 
-Scalegorithm calculates how to property scale a child element within a parent when conventional CSS options fail. 
+Scalegorithm calculates how to properly scale a child element within a parent when conventional CSS options fail. 
 This is useful for image scaling and cross-domain iframe situations.
 
 Features:
@@ -9,9 +9,11 @@ Features:
 - Recenter origin after scaling
 - Limit upscaling to prevent pixalation
 
-Instead of directly applying the scale to DOM elements, you may also use the `calc()` function to calculate numerical results.
+## Scale math ##
 
-## Example #
+Instead of directly manipulating DOM elements using `scaleChild()`, you may also use the `calc()` function to calculate numerical results.
+
+## Example ##
 
 Check https://codepen.io/anon/pen/qQYzOY for an example.
 

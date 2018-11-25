@@ -1,5 +1,5 @@
 /**
- * Scalegorithm calculates how to property scale a child element within a parent when conventional CSS options fail. 
+ * Scalegorithm calculates how to properly scale a child element within a parent when conventional CSS options fail. 
  * Useful for image scaling and cross-domain iframe situations.
  * @copyright S. Derdeyn 2018
  * @license MIT

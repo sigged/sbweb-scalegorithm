@@ -1,9 +1,9 @@
 {
     "name": "sbweb-scalegorithm",
-    "version": "0.1.4",
+    "version": "0.1.5",
     "author": "S. Derdeyn <sigged@users.noreply.github.com>",
     "license": "MIT",
-    "description": "Scalegorithm calculates how to property scale a child element within a parent when conventional CSS options fail.",
+    "description": "Scalegorithm calculates how to properly scale a child element within a parent when conventional CSS options fail.",
     "homepage": "https://github.com/sigged/sbweb-scalegorithm",
     "bugs": "https://github.com/sigged/sbweb-scalegorithm/issues",
     "keywords": [
