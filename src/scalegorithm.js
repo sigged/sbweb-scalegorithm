@@ -130,4 +130,14 @@ const Scalegorithm = (function () {
     }
 })();
 
-module.exports = Scalegorithm;
+/* istanbul ignore else */
+if (typeof module !== 'undefined' && typeof module.exports !== 'undefined') {
+    module.exports = Scalegorithm;
+} else {
+    /* istanbul ignore else */
+    if (typeof define === 'function' && define.amd) {
+        define([], function() {
+            return Scalegorithm;
+        });
+    }
+} 

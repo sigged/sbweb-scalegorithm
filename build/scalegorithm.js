@@ -133,5 +133,16 @@ var Scalegorithm = function () {
     scaleChild: scaleChild
   };
 }();
+/* istanbul ignore else */
 
-module.exports = Scalegorithm;
+
+if (typeof module !== 'undefined' && typeof module.exports !== 'undefined') {
+  module.exports = Scalegorithm;
+} else {
+  /* istanbul ignore else */
+  if (typeof define === 'function' && define.amd) {
+    define([], function () {
+      return Scalegorithm;
+    });
+  }
+}
