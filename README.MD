@@ -10,3 +10,5 @@ Features:
 - Limit upscaling to prevent pixalation
 
 Instead of directly applying the scale to DOM elements, you may also use the `calc()` function to calculate numerical results.
+
+[![Build Status](https://travis-ci.com/sigged/sbweb-scalegorithm.svg?branch=master)](https://travis-ci.com/sigged/sbweb-scalegorithm)
