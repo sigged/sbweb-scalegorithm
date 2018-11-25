@@ -22,7 +22,7 @@
         "test": "jest",
         "start": "node index.js",
         "build": "npm run build:js",
-        "build:js": "babel src/ --out-dir build/scripts && uglifyjs --compress --mangle --comments -o build/scripts/scalegorithm.min.js -- build/scripts/scalegorithm.js"
+        "build:js": "babel src/ --out-dir build/ && uglifyjs --compress --mangle --comments -o build/scalegorithm.min.js -- build/scalegorithm.js"
     },
     "dependencies": {},
     "devDependencies": {
