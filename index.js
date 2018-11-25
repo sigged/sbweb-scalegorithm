@@ -9,5 +9,6 @@ const path = require('path')
 const fs = require('fs');
 
 //serve everything as static
-app.use(express.static(path.join(__dirname, 'build')));
+app.use(express.static(path.join(__dirname, 'examples')));
+app.use('/scripts',express.static(path.join(__dirname, 'build')));
 app.listen(3000, () => console.log('app listening on port 3000!'))

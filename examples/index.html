@@ -10,14 +10,13 @@
     <!-- only used for syntax hightlighting -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/github.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/languages/html.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/languages/javascript.min.js"></script>
     <script>
         hljs.initHighlightingOnLoad();
     </script>
     
     <!-- here's the good stuff -->
-    <script src="/scripts/scalegorithm.min.js"></script>
+    <script src="../scripts/scalegorithm.min.js"></script>
 
     <style>
     body {
@@ -57,10 +56,8 @@
 </head>
 <body>
     <h1>Scalegorithm example</h1>
-    <p>
-        Imagine the iframe is cross-domain. You want the entire contents to fit in the bordered box without scrollbars.
-        The problem is you can't read or change the iframes contents using DOM.
-    </p>
+    <p>Imagine the iframe inside the orange container contains cross-domain content. You want the entire contents to fit in the bordered box, without scrollbars.
+        <br /> The problem is you can't read or change the iframes contents using CSS or javascript.</p>
     <p>Scalegorithm helps you to resize the iframe including its contents, provided the iframe has the correct dimensions.</p>
     <h3>Without Scalegorithm</h3>
     <!-- div contains remote iframe with overflowing content -->
@@ -102,7 +99,8 @@ Scalegorithm.scaleChild(
         </code>
     </pre>
     <hr />
-    <p>Scalegorithm can upscale small content. You may limit this using the <code>upscaleLimit</code> parameter to prevent raster pixelation</p>
+    <p>Scalegorithm can upscale small content. You may limit this using the <code>upscaleLimit</code> parameter to prevent raster pixelation.</p>
+    <p>The second iframe below should scale up, but upscaling is limited to scale 120%.</p>
     <h3>Without Scalegorithm</h3>
     <div id="p3" class="parentbox flex-centered">
         <iframe id="frame3" src="/frames/200x100.html" width="200" height="100" frameborder="0" scrolling="no"></iframe>
