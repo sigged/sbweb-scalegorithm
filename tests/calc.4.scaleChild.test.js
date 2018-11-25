@@ -1,4 +1,4 @@
-const sg = require('../build/scripts/scalegorithm.js');
+const sg = require('../build/scalegorithm.js');
 
 
 let parameters;
