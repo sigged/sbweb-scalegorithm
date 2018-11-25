@@ -114,7 +114,7 @@ var Scalegorithm = function () {
     return output;
   };
 
-  var scaleChild = function scaleChild(parent, child, parms) {
+  var scaleChild = function scaleChild(parent, child, parms, callback) {
     // merge parms into defaults
     parms = Object.assign(defaults, parms);
     parms.parentSize = [parent.offsetWidth, parent.clientHeight]; //override dimensions
@@ -126,6 +126,11 @@ var Scalegorithm = function () {
     child.style.top = output.childTop ? output.childTop + "px" : "";
     child.style.left = output.childLeft ? output.childLeft + "px" : "";
     child.style.transform = "scale(" + output.scale + ")";
+    /* istanbul ignore else */
+
+    if (callback) {
+      callback(child);
+    }
   };
 
   return {

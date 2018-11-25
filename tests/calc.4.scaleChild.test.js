@@ -55,6 +55,16 @@ describe('DOM ScaleChild method', () => {
         expect(mockDom.mockChild.style.top).toBe("");
     });
 
+    it('Runs callback and returns child element', () => {
+        const parms = Object.assign({}, parameters);
+
+        const completedHandler = jest.fn();
+
+        sg.scaleChild(mockDom.mockParent, mockDom.mockChild, parms, completedHandler);
+
+        expect(completedHandler).toBeCalledWith(mockDom.mockChild);
+    });
+
     //todo: create tests for parms.childSize & mockDom.offsetWidth difference
 
 });

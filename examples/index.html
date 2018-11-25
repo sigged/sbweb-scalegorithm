@@ -149,9 +149,13 @@ Scalegorithm.scaleChild(
             verbose : true,
         };
 
-        Scalegorithm.scaleChild(document.getElementById("p2"), document.getElementById("frame2"), parameters);
-        Scalegorithm.scaleChild(document.getElementById("p4"), document.getElementById("frame4"), parameters);
 
+        function completedCallback(child){
+            console.log("end scaling insidep2", child);
+        }
+
+        Scalegorithm.scaleChild(document.getElementById("p2"), document.getElementById("frame2"), parameters, completedCallback);
+        Scalegorithm.scaleChild(document.getElementById("p4"), document.getElementById("frame4"), parameters);
     </script>
 </body>
 </html>

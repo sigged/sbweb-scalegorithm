@@ -108,7 +108,7 @@ const Scalegorithm = (function () {
         return output;
     }
 
-    const scaleChild = function (parent, child, parms) {
+    const scaleChild = function (parent, child, parms, callback) {
 
         // merge parms into defaults
         parms = Object.assign(defaults, parms);
@@ -122,6 +122,11 @@ const Scalegorithm = (function () {
         child.style.top = output.childTop ? output.childTop + "px" : "";
         child.style.left = output.childLeft ? output.childLeft + "px" : "";
         child.style.transform = "scale(" + output.scale + ")";
+
+        /* istanbul ignore else */
+        if(callback){
+            callback(child);
+        }
     }
 
     return {
