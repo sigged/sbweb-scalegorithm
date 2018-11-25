@@ -11,4 +11,10 @@ Features:
 
 Instead of directly applying the scale to DOM elements, you may also use the `calc()` function to calculate numerical results.
 
+## Example #
+
+Check https://codepen.io/anon/pen/qQYzOY for an example.
+
+<br />
+
 [![Build Status](https://travis-ci.com/sigged/sbweb-scalegorithm.svg?branch=master)](https://travis-ci.com/sigged/sbweb-scalegorithm)
